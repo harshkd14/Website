@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Website - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home-style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>YourBrand</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <video autoplay muted loop class="background-video">
+            <source src="https://cdn.coverr.co/videos/coverr-golden-sunset-over-the-ocean-7436/1080p.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Our Website</h1>
+            <p class="hero-subtitle">Creating amazing experiences for our customers</p>
+            <button class="cta-button">Get Started</button>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Who We Are</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="about-image">
+                    <div class="placeholder-image">
+                        <span>Your Image Here</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section with Tabs -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive solutions tailored to your needs</p>
+
+            <!-- Service Tabs Navigation -->
+            <div class="service-tabs">
+                <button class="tab-btn active" data-tab="tab-1">
+                    <span class="tab-icon">💻</span>
+                    <span class="tab-name">Software Training</span>
+                </button>
+                <button class="tab-btn" data-tab="tab-2">
+                    <span class="tab-icon">🌐</span>
+                    <span class="tab-name">Backhand Process</span>
+                </button>
+                <button class="tab-btn" data-tab="tab-3">
+                    <span class="tab-icon">🤖</span>
+                    <span class="tab-name">Robotics</span>
+                </button>
+            </div>
+
+            <!-- Tab Indicator Dots -->
+            <div class="tab-indicators">
+                <span class="indicator active" data-indicator="tab-1"></span>
+                <span class="indicator" data-indicator="tab-2"></span>
+                <span class="indicator" data-indicator="tab-3"></span>
+            </div>
+
+            <!-- Service Content Cards -->
+            <div class="service-tabs-content">
+
+                <!-- Tab 1: Software Training -->
+                    <div class="service-item" data-service="service-1">
+                        <div class="service-item-content">
+                            <div class="service-icon-large">�</div>
+                            <h3 class="service-title">Software Training</h3>
+                            <p class="service-description">Empower your team with cutting-edge software skills. Our comprehensive training programs cover the latest technologies and industry best practices to boost productivity and innovation.</p>
+                            <ul class="service-features">
+                                <li>Hands-on Practical Training</li>
+                                <li>Industry Expert Instructors</li>
+                                <li>Customized Learning Paths</li>
+                                <li>Certification Programs</li>
+                            </ul>
+                            <a href="service-one.html" class="service-cta">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-item" data-service="service-2">
+                        <div class="service-item-content">
+                            <div class="service-icon-large">🌐</div>
+                            <h3 class="service-title">Backhand Process</h3>
+                            <p class="service-description">Scale your business efficiently with our professional outsourcing solutions. Access skilled talent, reduce costs, and focus on your core business while we handle the rest.</p>
+                            <ul class="service-features">
+                                <li>Dedicated Development Teams</li>
+                                <li>Quality Assurance & Testing</li>
+                                <li>24/7 Project Support</li>
+                                <li>Cost-Effective Solutions</li>
+                            </ul>
+                            <a href="service-two.html" class="service-cta">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-item" data-service="service-3">
+                        <div class="service-item-content">
+                            <div class="service-icon-large">�</div>
+                            <h3 class="service-title">Robotics</h3>
+                            <p class="service-description">Transform your operations with advanced robotics and automation solutions. From design to deployment, we deliver intelligent robotic systems that enhance efficiency and precision.</p>
+                            <ul class="service-features">
+                                <li>Custom Robotics Design</li>
+                                <li>Industrial Automation</li>
+                                <li>AI-Powered Systems</li>
+                                <li>Maintenance & Support</li>
+                            </ul>
+                            <a href="service-three.html" class="service-cta">Learn More →</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Side: Sticky Visual Content with Flip Cards -->
+                <div class="services-sticky-visual">
+                    <div class="sticky-visual-container">
+
+                        <!-- Visual for Service 1: Software Training -->
+                        <div class="visual-item active" data-visual="service-1">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <!-- Front Side -->
+                                    <div class="flip-card-front">
+                                        <div class="visual-gradient gradient-1"></div>
+                                        <div class="visual-icon">💻</div>
+                                        <h3>Software Training</h3>
+                                        <p>Learn. Grow. Excel.</p>
+                                    </div>
+                                    <!-- Back Side -->
+                                    <div class="flip-card-back">
+                                        <div class="visual-gradient gradient-1"></div>
+                                        <h3>Training Programs</h3>
+                                        <ul class="flip-features">
+                                            <li>✓ Expert Instructors</li>
+                                            <li>✓ Hands-on Learning</li>
+                                            <li>✓ Certifications</li>
+                                            <li>✓ Career Support</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Visual for Service 2: Outsource Working -->
+                        <div class="visual-item" data-visual="service-2">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <!-- Front Side -->
+                                    <div class="flip-card-front">
+                                        <div class="visual-gradient gradient-2"></div>
+                                        <div class="visual-icon">🌐</div>
+                                        <h3>Backhand Process</h3>
+                                        <p>Scale. Optimize. Succeed.</p>
+                                    </div>
+                                    <!-- Back Side -->
+                                    <div class="flip-card-back">
+                                        <div class="visual-gradient gradient-2"></div>
+                                        <h3>Backhand Process</h3>
+                                        <ul class="flip-features">
+                                            <li>✓ Skilled Teams</li>
+                                            <li>✓ Cost Effective</li>
+                                            <li>✓ 24/7 Support</li>
+                                            <li>✓ Quality Assured</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Visual for Service 3: Robotics -->
+                        <div class="visual-item" data-visual="service-3">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <!-- Front Side -->
+                                    <div class="flip-card-front">
+                                        <div class="visual-gradient gradient-3"></div>
+                                        <div class="visual-icon">🤖</div>
+                                        <h3>Robotics</h3>
+                                        <p>Innovate. Automate. Transform.</p>
+                                    </div>
+                                    <!-- Back Side -->
+                                    <div class="flip-card-back">
+                                        <div class="visual-gradient gradient-3"></div>
+                                        <h3>Robotics Solutions</h3>
+                                        <ul class="flip-features">
+                                            <li>✓ Custom Design</li>
+                                            <li>✓ AI-Powered</li>
+                                            <li>✓ Automation</li>
+                                            <li>✓ Full Support</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="info-item">
+                        <span class="icon">📍</span>
+                        <p>123 Business Street, City, Country</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📧</span>
+                        <p>info@yourbrand.com</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📞</span>
+                        <p>+1 (234) 567-8900</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 YourBrand. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="home-script.js"></script>
+</body>
+</html>
+

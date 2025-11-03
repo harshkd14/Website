@@ -1,0 +1,160 @@
+    <!-- Services Section with Tabs -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive solutions tailored to your needs</p>
+
+            <!-- Service Tabs Navigation -->
+            <div class="service-tabs">
+                <button class="tab-btn active" data-tab="tab-1">
+                    <span class="tab-icon">💻</span>
+                    <span class="tab-name">Software Training</span>
+                </button>
+                <button class="tab-btn" data-tab="tab-2">
+                    <span class="tab-icon">🌐</span>
+                    <span class="tab-name">Backhand Process</span>
+                </button>
+                <button class="tab-btn" data-tab="tab-3">
+                    <span class="tab-icon">🤖</span>
+                    <span class="tab-name">Robotics</span>
+                </button>
+            </div>
+
+            <!-- Tab Indicator Dots -->
+            <div class="tab-indicators">
+                <span class="indicator active" data-indicator="tab-1"></span>
+                <span class="indicator" data-indicator="tab-2"></span>
+                <span class="indicator" data-indicator="tab-3"></span>
+            </div>
+
+            <!-- Service Content Cards -->
+            <div class="service-tabs-content">
+                
+                <!-- Tab 1: Software Training -->
+                <div class="tab-content active" id="tab-1">
+                    <div class="service-card">
+                        <div class="service-card-header">
+                            <div class="service-icon-large">💻</div>
+                            <h3>Software Training</h3>
+                            <p class="service-tagline">Learn. Grow. Excel.</p>
+                        </div>
+                        <div class="service-card-body">
+                            <p class="service-description">Empower your team with cutting-edge software skills. Our comprehensive training programs cover the latest technologies and industry best practices to boost productivity and innovation.</p>
+                            <div class="service-features-grid">
+                                <div class="feature-item">
+                                    <span class="feature-icon">✓</span>
+                                    <span>Hands-on Practical Training</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">✓</span>
+                                    <span>Industry Expert Instructors</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">✓</span>
+                                    <span>Customized Learning Paths</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">✓</span>
+                                    <span>Certification Programs</span>
+                                </div>
+                            </div>
+                            <a href="service-one.html" class="service-cta-btn">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Backhand Process -->
+                <div class="tab-content" id="tab-2">
+                    <div class="service-card">
+                        <div class="service-card-header">
+                            <div class="service-icon-large">🌐</div>
+                            <h3>Backhand Process</h3>
+                            <p class="service-tagline">Scale. Optimize. Succeed.</p>
+                        </div>
+                        <div class="service-card-body">
+                            <p class="service-description">Scale your business efficiently with our professional outsourcing solutions. Access skilled talent, reduce costs, and focus on your core business while we handle the rest.</p>
+                            <div class="service-features-grid">
+                                <div class="feature-item">
+                                    <span class="feature-icon">✓</span>
+                                    <span>Dedicated Development Teams</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">✓</span>
+                                    <span>Quality Assurance & Testing</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">✓</span>
+                                    <span>24/7 Project Support</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">✓</span>
+                                    <span>Cost-Effective Solutions</span>
+                                </div>
+                            </div>
+                            <a href="service-two.html" class="service-cta-btn">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 3: Robotics -->
+                <div class="tab-content" id="tab-3">
+                    <div class="service-card">
+                        <div class="service-card-header">
+                            <div class="service-icon-large">🤖</div>
+                            <h3>Robotics</h3>
+                            <p class="service-tagline">Innovate. Automate. Transform.</p>
+                        </div>
+                        <div class="service-card-body">
+                            <p class="service-description">Transform your operations with advanced robotics and automation solutions. From design to deployment, we deliver intelligent robotic systems that enhance efficiency and precision.</p>
+                            <div class="service-features-grid">
+                                <div class="feature-item">
+                                    <span class="feature-icon">✓</span>
+                                    <span>Custom Robotics Design</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">✓</span>
+                                    <span>Industrial Automation</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">✓</span>
+                                    <span>AI-Powered Systems</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">✓</span>
+                                    <span>Maintenance & Support</span>
+                                </div>
+                            </div>
+                            <a href="service-three.html" class="service-cta-btn">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+    // Tab Switching Functionality with Slide Animation
+    document.addEventListener('DOMContentLoaded', function() {
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+        const indicators = document.querySelectorAll('.indicator');
+
+        tabBtns.forEach((btn, index) => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all tabs, contents, and indicators
+                tabBtns.forEach(b => b.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                indicators.forEach(i => i.classList.remove('active'));
+
+                // Add active class to clicked tab, corresponding content, and indicator
+                btn.classList.add('active');
+                const tabId = btn.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+                indicators[index].classList.add('active');
+            });
+        });
+    });
+    </script>
+
